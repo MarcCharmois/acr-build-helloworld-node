@@ -5,6 +5,7 @@ const port = 80
 const server = http.createServer((request, response) => {
   response.writeHead(200, {'Content-Type': 'text/plain'})
   response.write('Hello World\n change one to check pipeline\n')
+  response.write('change 2 for demo\n')
   response.end('Version: ' + process.env.NODE_VERSION + '\n')
 })
 
